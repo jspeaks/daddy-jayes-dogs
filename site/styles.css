@@ -1,0 +1,50 @@
+:root {
+  color-scheme: light;
+  background: #f5c95a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+  padding: clamp(1rem, 4vw, 3rem);
+  background:
+    radial-gradient(circle at top, rgb(255 249 217 / 92%), transparent 46%),
+    #f5c95a;
+}
+
+main {
+  width: min(100%, 96rem);
+}
+
+h1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-inline: auto;
+  border: clamp(0.35rem, 0.8vw, 0.75rem) solid #fff7dc;
+  border-radius: clamp(0.75rem, 2vw, 1.5rem);
+  box-shadow: 0 1.5rem 4rem rgb(75 42 8 / 28%);
+}
